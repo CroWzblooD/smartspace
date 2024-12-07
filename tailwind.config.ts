@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+        sans: ["var(--font-space-grotesk)", ...fontFamily.sans],
+        mono: ["var(--font-space-mono)", ...fontFamily.mono],
       },
       colors: {
         primary: {

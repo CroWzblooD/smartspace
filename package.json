@@ -21,6 +21,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@geist-ui/core": "^2.3.8",
     "@prisma/client": "^5.22.0",
     "@react-three/drei": "^9.120.2",
     "@react-three/fiber": "^8.17.10",

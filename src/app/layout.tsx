@@ -1,10 +1,29 @@
 import "~/styles/globals.css";
 
-import { GeistSans } from "geist/font/sans";
+import { GeistSans, GeistMono } from 'geist/font'
 import { type Metadata } from "next";
+import { Inter } from 'next/font/google';
+import { Space_Grotesk, Space_Mono } from 'next/font/google';
 
 import { TRPCReactProvider } from "~/trpc/react";
 import ChatbotWidget from "../components/ChatbotWidget";
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter'
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+});
+
+const spaceMono = Space_Mono({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-space-mono',
+});
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -18,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="overflow-x-hidden">
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} ${spaceGrotesk.variable} ${spaceMono.variable}`}>
+      <body className="font-sans antialiased">
         <div className="w-full max-w-[100vw] overflow-x-hidden">
           {children}
         </div>
