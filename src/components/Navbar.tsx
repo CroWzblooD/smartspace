@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { IconBrain, IconMenu2, IconX } from '@tabler/icons-react';
+import { IconMenu2, IconSpaces, IconX } from '@tabler/icons-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +28,7 @@ export default function Navbar() {
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
           >
-            <IconBrain className="w-8 h-8 text-primary-orange" />
+            <IconSpaces className="w-8 h-8 text-primary-orange" />
             <span className="text-2xl font-bold text-primary-black">
               Smart<span className="text-primary-orange">Space</span>
             </span>

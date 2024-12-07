@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { IconBrain, IconArrowRight, IconCircuitMotor, IconShip } from '@tabler/icons-react';
+import { IconArrowRight, IconCircuitMotor, IconShip, IconSpaces } from '@tabler/icons-react';
 
 export default function Hero() {
   return (
@@ -136,7 +136,7 @@ export default function Hero() {
                   repeat: Infinity,
                 }}
               >
-                <IconBrain className="w-16 h-16 text-primary-orange" />
+                <IconSpaces className="w-16 h-16 text-primary-orange" />
               </motion.div>
 
               {/* Floating Elements */}
