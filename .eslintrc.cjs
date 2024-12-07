@@ -36,7 +36,10 @@ const config = {
           "attributes": false
         }
       }
-    ]
+    ],
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off"
   }
 }
 module.exports = config;

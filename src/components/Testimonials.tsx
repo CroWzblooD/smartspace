@@ -92,7 +92,7 @@ export default function Testimonials() {
                       <p className="text-xs text-primary-gray">{testimonial.role}</p>
                     </div>
                   </div>
-                  <p className="text-primary-gray text-sm mb-4">"{testimonial.content}"</p>
+                  <p className="text-primary-gray text-sm mb-4">&quot;{testimonial.content}&quot;</p>
                   <div className="flex gap-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <IconStar key={i} className="w-4 h-4 text-primary-orange" fill="currentColor" />
