@@ -5,6 +5,7 @@ import Stats from '../components/Stats';
 import CTA from '../components/CTA';
 import Navbar from '../components/Navbar';
 import Services from '~/components/Services';
+import Footer from '~/components/Footer';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <UseCases />
         <Stats />
         <CTA />
+        <Footer />
       </div>
       
       {/* Animated background overlay */}
