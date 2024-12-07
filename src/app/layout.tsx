@@ -5,7 +5,6 @@ import { type Metadata } from "next";
 import { Inter } from 'next/font/google';
 import { Space_Grotesk, Space_Mono } from 'next/font/google';
 
-import { TRPCReactProvider } from "~/trpc/react";
 import ChatbotWidget from "../components/ChatbotWidget";
 
 const inter = Inter({ 
@@ -41,6 +40,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <div className="w-full max-w-[100vw] overflow-x-hidden">
           {children}
+          <ChatbotWidget />
         </div>
       </body>
     </html>

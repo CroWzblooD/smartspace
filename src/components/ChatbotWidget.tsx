@@ -19,6 +19,7 @@ interface Message {
 }
 
 export default function ChatbotWidget() {
+  const [isMounted, setIsMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState<Message[]>([
@@ -30,6 +31,10 @@ export default function ChatbotWidget() {
     }
   ]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -66,6 +71,11 @@ export default function ChatbotWidget() {
     }, 1000);
   };
 
+  // Return null during SSR to prevent hydration mismatch
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <div className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50">
       <AnimatePresence>
@@ -77,7 +87,7 @@ export default function ChatbotWidget() {
             className="absolute bottom-20 right-0 w-[calc(100vw-2rem)] sm:w-96 max-w-[96vw] bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100"
           >
             {/* Chat Header */}
-            <div className="bg-gradient-to-r from-primary-orange to-accent-blue p-3 sm:p-4">
+            <div className="bg-gradient-to-r from-primary-orange to-accent-blue p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <IconRobot className="w-6 h-6 text-white" />
@@ -96,7 +106,7 @@ export default function ChatbotWidget() {
             </div>
 
             {/* Chat Messages */}
-            <div className="h-[60vh] sm:h-96 overflow-y-auto p-3 sm:p-4 space-y-4">
+            <div className="h-[60vh] sm:h-96 overflow-y-auto p-4 space-y-4">
               {messages.map((msg) => (
                 <motion.div
                   key={msg.id}
@@ -142,7 +152,7 @@ export default function ChatbotWidget() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Type your message..."
-                  className="flex-1 px-4 py-2 rounded-xl border border-gray-200 focus:border-primary-orange focus:ring-1 focus:ring-primary-orange outline-none"
+                  className="flex-1 px-3 sm:px-4 py-2 text-sm sm:text-base rounded-xl border border-gray-200 focus:border-primary-orange focus:ring-1 focus:ring-primary-orange outline-none"
                 />
                 <motion.button
                   whileHover={{ scale: 1.05 }}
