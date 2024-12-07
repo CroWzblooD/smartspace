@@ -1,0 +1,12 @@
+/* Add or update these base styles */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* If you're using a root layout wrapper, add this */
+#root, main, .layout-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+} 

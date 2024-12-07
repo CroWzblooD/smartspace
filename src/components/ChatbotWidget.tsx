@@ -67,17 +67,17 @@ export default function ChatbotWidget() {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50">
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="absolute bottom-20 right-0 w-96 bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100"
+            className="absolute bottom-20 right-0 w-[calc(100vw-2rem)] sm:w-96 max-w-[96vw] bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100"
           >
             {/* Chat Header */}
-            <div className="bg-gradient-to-r from-primary-orange to-accent-blue p-4">
+            <div className="bg-gradient-to-r from-primary-orange to-accent-blue p-3 sm:p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <IconRobot className="w-6 h-6 text-white" />
@@ -96,7 +96,7 @@ export default function ChatbotWidget() {
             </div>
 
             {/* Chat Messages */}
-            <div className="h-96 overflow-y-auto p-4 space-y-4">
+            <div className="h-[60vh] sm:h-96 overflow-y-auto p-3 sm:p-4 space-y-4">
               {messages.map((msg) => (
                 <motion.div
                   key={msg.id}
@@ -135,7 +135,7 @@ export default function ChatbotWidget() {
             </div>
 
             {/* Chat Input */}
-            <form onSubmit={handleSubmit} className="p-4 border-t border-gray-100">
+            <form onSubmit={handleSubmit} className="p-3 sm:p-4 border-t border-gray-100">
               <div className="flex gap-2">
                 <input
                   type="text"
@@ -163,7 +163,7 @@ export default function ChatbotWidget() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 rounded-full bg-primary-orange text-white shadow-lg hover:shadow-orange flex items-center justify-center transition-all duration-300"
+        className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary-orange text-white shadow-lg hover:shadow-orange flex items-center justify-center transition-all duration-300"
       >
         {isOpen ? (
           <IconChevronDown className="w-6 h-6" />
