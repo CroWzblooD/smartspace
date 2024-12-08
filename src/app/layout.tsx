@@ -1,11 +1,11 @@
-import "~/styles/globals.css";
+import "@/styles/globals.css";
 
 import { GeistSans, GeistMono } from 'geist/font'
 import { type Metadata } from "next";
 import { Inter } from 'next/font/google';
 import { Space_Grotesk, Space_Mono } from 'next/font/google';
 
-import ChatbotWidget from "../components/ChatbotWidget";
+import ChatbotWidget from "@/components/ChatbotWidget";
 
 const inter = Inter({ 
   subsets: ['latin'],

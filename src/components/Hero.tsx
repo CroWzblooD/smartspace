@@ -20,25 +20,19 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-lg">
               <IconShip className="text-primary-orange w-5 h-5" />
-              <span className="text-sm text-primary-gray">Powered by Intel Technology</span>
+              <span className="text-sm text-primary-gray">Your Digital Life Assistant</span>
             </div>
             
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="text-primary-black block mb-2">Transform Your</span>
+              <span className="text-primary-black block mb-2">Smart Space AI</span>
               <div className="relative inline-block">
-                <span className="text-primary-orange relative z-10">Digital World</span>
-                <motion.div 
-                  className="absolute -bottom-2 left-0 h-3 bg-primary-orange/10 w-full"
-                  initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
-                  transition={{ delay: 0.5, duration: 0.8 }}
-                />
+                <span className="text-primary-orange relative z-10">Organize Smart, Live Free</span>
               </div>
             </h1>
 
             <p className="text-xl text-primary-gray leading-relaxed max-w-xl">
-              Experience the future of digital organization with our AI-powered platform. 
-              Seamlessly manage your life across all devices.
+              Effortlessly manage thousands of files across multiple devices and cloud accounts. 
+              Just say "Show me last month's presentation" and let AI find it instantly.
             </p>
 
             <div className="flex items-center gap-6 pt-4">
@@ -63,12 +57,12 @@ export default function Hero() {
               </motion.button>
             </div>
 
-            {/* Stats */}
+            {/* Updated Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               {[
-                { number: "10K+", label: "Active Users" },
-                { number: "95%", label: "Satisfaction" },
-                { number: "24/7", label: "Support" }
+                { number: "70%", label: "Time Saved in Searches" },
+                { number: "40%", label: "Storage Optimized" },
+                { number: "5+", label: "Cloud Services Connected" }
               ].map((stat, index) => (
                 <motion.div
                   key={index}

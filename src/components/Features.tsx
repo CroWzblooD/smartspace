@@ -16,57 +16,57 @@ import {
 const features = [
   {
     icon: IconBrain,
-    title: "Smart Organization",
-    description: "AI-powered file categorization and tagging",
-    category: "Intelligence"
+    title: "Voice-Powered Search",
+    description: "Simply ask 'Find my client presentation' and AI instantly searches across all connected devices",
+    category: "Smart Search"
   },
   {
     icon: IconSearch,
-    title: "Instant Search",
-    description: "Find any file in milliseconds with smart search",
-    category: "Speed"
-  },
-  {
-    icon: IconShieldLock,
-    title: "Bank-Grade Security",
-    description: "Enterprise-level encryption for your data",
-    category: "Security"
-  },
-  {
-    icon: IconSpeedboat,
-    title: "Lightning Fast",
-    description: "Optimized performance across all devices",
-    category: "Speed"
-  },
-  {
-    icon: IconChartBar,
-    title: "Smart Analytics",
-    description: "Insights into your productivity patterns",
-    category: "Intelligence"
-  },
-  {
-    icon: IconFingerprint,
-    title: "Biometric Access",
-    description: "Secure access with fingerprint and Face ID",
-    category: "Security"
-  },
-  {
-    icon: IconDevices,
-    title: "Cross-Platform",
-    description: "Seamless sync across all your devices",
-    category: "Access"
-  },
-  {
-    icon: IconCloud,
-    title: "Cloud Power",
-    description: "Backed by Intel's robust cloud infrastructure",
-    category: "Performance"
+    title: "Smart Organization",
+    description: "Automatically categorizes 50,000+ photos and 1,000+ documents, detecting duplicates instantly",
+    category: "Organization"
   },
   {
     icon: IconLogicAnd,
-    title: "Auto Enhance",
-    description: "Smart optimization of stored content",
-    category: "Intelligence"
+    title: "Real-time Assistant",
+    description: "Access important files within seconds - whether you're in a meeting, library, or on the go",
+    category: "Productivity"
+  },
+  {
+    icon: IconDevices,
+    title: "Multi-Device Sync",
+    description: "Seamlessly connect 3+ devices and 5+ cloud accounts including Google Drive and OneDrive",
+    category: "Integration"
+  },
+  {
+    icon: IconChartBar,
+    title: "Storage Optimization",
+    description: "Free up to 40% storage space with automatic duplicate detection and low-quality file management",
+    category: "Storage"
+  },
+  {
+    icon: IconShieldLock,
+    title: "Privacy Protection",
+    description: "Secure sensitive files with Face ID and additional security layers for personal content",
+    category: "Security"
+  },
+  {
+    icon: IconCloud,
+    title: "Smart Processing",
+    description: "Intel NPU powered on-device AI processing ensuring maximum privacy and speed",
+    category: "Performance"
+  },
+  {
+    icon: IconSpeedboat,
+    title: "Instant Results",
+    description: "70% faster file searches across all devices and cloud storage with millisecond response",
+    category: "Speed"
+  },
+  {
+    icon: IconFingerprint,
+    title: "Context Understanding",
+    description: "Understands natural commands like 'Show beach vacation photos' or 'Find last month's tax document'",
+    category: "AI Intelligence"
   }
 ];
 

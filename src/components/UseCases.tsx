@@ -6,31 +6,59 @@ import { IconBriefcase, IconSchool, IconHome, IconPalette } from '@tabler/icons-
 const useCases = [
   {
     icon: IconBriefcase,
-    title: "Business",
-    description: "Streamline workflows and boost team productivity",
-    features: ["Document Management", "Team Collaboration", "Project Tracking", "Client Portal"],
+    title: "Business Professional",
+    persona: "Meet Rahul",
+    description: "Access any document instantly during meetings, manage 100+ daily emails, and organize work across 3 laptops and multiple cloud accounts.",
+    features: [
+      "Voice-powered document search",
+      "Cross-device file sync",
+      "Smart email organization",
+      "Meeting context awareness"
+    ],
+    impact: "Save 70% time in document searches",
     color: "primary-orange"
   },
   {
     icon: IconSchool,
-    title: "Education",
-    description: "Organize study materials and research efficiently",
-    features: ["Research Organization", "Study Planning", "Resource Library", "Citation Management"],
-    color: "accent-blue"
-  },
-  {
-    icon: IconHome,
-    title: "Personal",
-    description: "Keep your digital life organized and accessible",
-    features: ["Photo Organization", "Document Storage", "Task Management", "Family Sharing"],
-    color: "accent-teal"
+    title: "Student Life",
+    persona: "Meet Priya",
+    description: "Keep assignments, research papers, and study materials organized across devices. Access any document instantly in the library or during classes.",
+    features: [
+      "Quick notes retrieval",
+      "Assignment tracking",
+      "Study material organization",
+      "Multi-device sync"
+    ],
+    impact: "Never miss assignment deadlines",
+    color: "primary-blue"
   },
   {
     icon: IconPalette,
-    title: "Creative",
-    description: "Manage creative assets and streamline workflows",
-    features: ["Asset Library", "Project Management", "Version Control", "Client Sharing"],
-    color: "accent-amber"
+    title: "Creative Professional",
+    persona: "Meet Aman",
+    description: "Manage thousands of photos and videos efficiently. Free up storage space by detecting duplicates and organizing media automatically.",
+    features: [
+      "Smart photo organization",
+      "Duplicate detection",
+      "Storage optimization",
+      "Auto-categorization"
+    ],
+    impact: "Optimize storage by 40%",
+    color: "primary-green"
+  },
+  {
+    icon: IconHome,
+    title: "Family Manager",
+    persona: "Meet Neeta",
+    description: "Keep family photos, documents, and memories secure and organized. Access any file instantly while maintaining privacy and security.",
+    features: [
+      "Face ID protection",
+      "Smart album creation",
+      "Family file sharing",
+      "Secure backup system"
+    ],
+    impact: "Keep memories safe and organized",
+    color: "primary-purple"
   }
 ];
 
