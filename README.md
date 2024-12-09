@@ -1,29 +1,207 @@
-# Create T3 App
+# SmartSpace AI - Intelligent Data Management Assistant
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+SmartSpace AI is a powerful, AI-driven digital assistant designed to revolutionize data management. Using Intel's cutting-edge technologies, it provides intuitive, real-time data organization and optimization. It helps professionals and users manage scattered data across devices, optimize storage, and improve productivity while ensuring enhanced security.
 
-## What's next? How do I make an app with this?
+---
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Table of Contents
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+1. [Problem Statement](#problem-statement)  
+2. [Motivation and Statistics](#motivation-and-statistics)  
+3. [Proposed Solution](#proposed-solution)  
+4. [Architecture Overview](#architecture-overview)  
+5. [Tech Stack](#tech-stack)  
+6. [Novelty and Expected Results](#novelty-and-expected-results)  
+7. [Setup and Installation](#setup-and-installation)  
+8. [Usage](#usage)  
+9. [Project Screenshots](#project-screenshots)  
+10. [Team Members](#team-members)
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+---
 
-## Learn More
+## Problem Statement
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+In today's digital era, managing vast amounts of disorganized data scattered across devices is a significant challenge. This results in:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- Wasted time searching for misplaced files.  
+- Reduced productivity and global economic losses.  
+- Inefficient storage due to duplicates and unused files.  
+- Increased risks to data security.
+  
+---
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Motivation and Statistics
 
-## How do I deploy this?
+### Motivation  
+- The increasing reliance on digital data requires smarter tools for management and optimization.  
+- SmartSpace AI offers a solution to save time, increase productivity, and enhance data security.  
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+### Statistics  
+- Professionals waste over **3 hours weekly** searching for misplaced files (Forbes, 2023).  
+- Disorganized data contributes to **$1.5 trillion in annual productivity loss** globally (McKinsey, 2023).  
+- The average user manages around **2TB of data** across multiple devices.
+
+---
+
+## Proposed Solution
+
+SmartSpace AI acts as an intelligent assistant to streamline data management. Key features include:  
+
+- **Smart Search:** Retrieve files using context-based AI models.  
+- **Real-Time Optimization:** Categorizes and organizes files with intelligent suggestions.  
+- **Automatic Cleanup:** Detects duplicates and unused files, optimizing storage.  
+- **Cross-Platform Sync:** Integrates seamlessly across devices and cloud platforms.  
+- **AI Chatbot:** Handles real-time user queries with personalized recommendations.  
+
+---
+
+## Architecture Overview
+
+### Diagram  
+![Architecture Diagram](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/image.png)  
+
+### Key Components  
+- **Frontend:** Built with Next.js, Tailwind CSS, and TypeScript.  
+- **Backend:** Node.js, Express.js, and PostgreSQL with Prisma.  
+- **Optimization:** Powered by Intel AI accelerators and OpenVINO Toolkit.  
+
+---
+
+## Tech Stack
+
+### Hardware  
+- Intel AI PC with NPU  
+- Intel® Arc™ GPU  
+
+### Frontend Technologies  
+- Next.js  
+- Tailwind CSS  
+- TypeScript  
+
+### Backend Technologies  
+- Node.js  
+- Express.js  
+- PostgreSQL with Prisma  
+
+### Optimization Tools  
+- OpenVINO™ Toolkit  
+- Intel® Neural Compressor  
+- TensorFlow Lite  
+
+### Security Frameworks  
+- OAuth 2.0  
+
+### Development Tools  
+- Docker  
+
+---
+
+## Novelty and Expected Results
+
+### Novelty  
+- Combines privacy-first AI workflows with real-time edge processing.  
+- Centralized, scalable data management tailored for diverse user categories.  
+
+### Expected Results  
+- **40% storage optimization** via automatic cleanup.  
+- **70% time savings** in retrieving files.  
+- Enhanced productivity and reduced frustration for users.  
+
+---
+
+## Setup and Installation
+
+### Prerequisites
+
+1. Install **Node.js** and **npm**:  
+   Download and install the latest version from [Node.js official website](https://nodejs.org/).
+
+2. Install **Docker**:  
+   Download and install Docker from [Docker official website](https://www.docker.com/).
+
+3. Install **PostgreSQL**:  
+   Set up PostgreSQL by downloading it from [PostgreSQL official website](https://www.postgresql.org/).  
+
+4. Install **Intel Optimization Tools**:
+   - OpenVINO Toolkit: Follow the installation guide at [OpenVINO documentation](https://docs.openvino.ai/).  
+   - Intel® Neural Compressor and AI Analytics Toolkit: Follow setup instructions from [Intel AI tools](https://www.intel.com/ai).  
+
+### Installation Steps
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-repo/SmartSpace-AI.git
+   cd SmartSpace-AI
+
+2. Install dependencies for the frontend:  
+   ```bash
+   cd frontend
+   npm install
+
+3. Install dependencies for the backend:
+   ```bash
+   cd ../backend
+   npm install
+
+4. Set up PostgreSQL:
+   - Create a new database.
+   - Update the `.env` file with your database connection details:
+   ```env
+   DATABASE_URL=postgresql://username:password@localhost:5432/your-database-name
+
+5. Run database migrations with Prisma:
+   ```bash
+   npx prisma migrate dev
+
+6. Build the frontend:
+   ```bash
+   cd ../frontend
+   npm run build
+
+7. Start the application:
+   - Start the backend:
+     ```bash
+     cd ../backend
+     npm start
+
+   - Start the fronted:
+     ```bash
+     cd ../frontend
+     npm start
+
+---
+
+## Usage
+
+1. Upload files or grant SmartSpace AI permission to scan data across devices.  
+2. The AI assistant analyzes and organizes data intelligently.  
+3. Access categorized and optimized data via the user interface.  
+
+---
+
+## Project Screenshots
+
+### SmartSpace User Interface  
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img1.jpg)
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img2.jpg)
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img3.jpg)
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img4.jpg)
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img5.jpg)
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img6.jpg)
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img7.jpg)
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img8.jpg)
+![SmartSpace User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img9.jpg)
+
+### SmartSpace AI User Interface  
+![SmartSpace AI User Interface](https://github.com/CroWzblooD/Radiologist-AI/blob/main/components/imagesSmartSpace/smartspace-img10.jpg)  
+
+---
+
+## Team Members
+
+**Team Name:** Squirtles  
+
+- **Ashish K Choudhary**  
+- **Krishna**  
+
+
