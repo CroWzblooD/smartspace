@@ -199,7 +199,7 @@ SmartSpace AI acts as an intelligent assistant to streamline data management. Ke
 
 ## Team Members
 
-**Team Name:** Squirtles  
+**Team Name:** Squirtle
 
 - **Ashish K Choudhary**  
 - **Krishna**  
